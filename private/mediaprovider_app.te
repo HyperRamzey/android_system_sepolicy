@@ -32,6 +32,9 @@ allow mediaprovider_app audioserver_service:service_manager find;
 # Talk to the MediaCodec APIs that log media metrics
 allow mediaprovider_app mediametrics_service:service_manager find;
 
+# Talk to the radio service (isub subscription lookup)
+allow mediaprovider_app radio_service:service_manager find;
+
 # Talk to regular app services
 allow mediaprovider_app app_api_service:service_manager find;
 
